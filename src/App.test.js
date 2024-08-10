@@ -27,8 +27,13 @@ describe ('Addition using addNumber method', () => {
     expect(resultTwo).toEqual(2);
   })
 
-  it('should aggregate numbers with two numbers comma separated', () => {
+  it('should aggregate two numbers comma separated', () => {
     const result = add('1,2');
     expect(result).toEqual(3);
+  })
+
+  it('should aggregate multiple numbers comma separated', () => {
+    const result = add('1,2,3,4,5,6,7');
+    expect(result).toEqual(28);
   })
 })

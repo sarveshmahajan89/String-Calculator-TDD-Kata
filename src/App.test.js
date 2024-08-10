@@ -19,4 +19,11 @@ describe ('Addition using addNumber method', () => {
     const result = add('');
     expect(result).toEqual(0);
   })
+
+  it('with one number string', () => {
+    const resultOne = add('1');
+    const resultTwo = add('2');
+    expect(resultOne).toEqual(1);
+    expect(resultTwo).toEqual(2);
+  })
 })

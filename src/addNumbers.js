@@ -1,6 +1,6 @@
 export function add(numbers) {
     let sumOfNumbers;
-    sumOfNumbers = 0;
+    sumOfNumbers = Number(numbers);
 
     return sumOfNumbers;
 }

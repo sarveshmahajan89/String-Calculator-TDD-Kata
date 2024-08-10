@@ -14,8 +14,8 @@ describe ('Addition', () => {
   })
 })
 
-describe ('Addition using addNumber method with empty string', () => {
-  it('Adding 2 and 2 makes 4', () => {
+describe ('Addition using addNumber method', () => {
+  it('with empty string', () => {
     const result = add('');
     expect(result).toEqual(0);
   })

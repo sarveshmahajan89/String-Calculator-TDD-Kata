@@ -36,4 +36,9 @@ describe ('Addition using addNumber method', () => {
     const result = add('1,2,3,4,5,6,7');
     expect(result).toEqual(28);
   })
+
+  it('should aggregate multiple numbers with new lines or comma separated', () => {
+    const result = add('1\n2,3');
+    expect(result).toEqual(6);
+  })
 })

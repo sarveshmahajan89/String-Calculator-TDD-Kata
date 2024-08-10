@@ -1,7 +1,7 @@
 export function add(numbers) {
     if (numbers === '') return 0;
     let sumOfNumbers;
-    sumOfNumbers = numbers.split(",").reduce((sum, val) => {
+    sumOfNumbers = numbers.split(/,|\n/).reduce((sum, val) => {
         sum = sum + Number(val);
         return sum;
     }, 0);

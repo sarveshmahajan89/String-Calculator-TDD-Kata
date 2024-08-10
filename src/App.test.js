@@ -15,15 +15,20 @@ describe ('Addition', () => {
 })
 
 describe ('Addition using addNumber method', () => {
-  it('with empty string', () => {
+  it('should return 0 with empty string', () => {
     const result = add('');
     expect(result).toEqual(0);
   })
 
-  it('with one number string', () => {
+  it('should return number with one number string', () => {
     const resultOne = add('1');
     const resultTwo = add('2');
     expect(resultOne).toEqual(1);
     expect(resultTwo).toEqual(2);
+  })
+
+  it('should aggregate numbers with two numbers comma separated', () => {
+    const result = add('1,2');
+    expect(result).toEqual(3);
   })
 })

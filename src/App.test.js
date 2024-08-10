@@ -27,18 +27,28 @@ describe ('Addition using addNumber method', () => {
     expect(resultTwo).toEqual(2);
   })
 
-  it('should aggregate two numbers comma separated', () => {
+  it('should aggregate two numbers with , separated', () => {
     const result = add('1,2');
     expect(result).toEqual(3);
   })
 
-  it('should aggregate multiple numbers comma separated', () => {
+  it('should aggregate multiple numbers with , separated', () => {
     const result = add('1,2,3,4,5,6,7');
     expect(result).toEqual(28);
   })
 
-  it('should aggregate multiple numbers with new lines or comma separated', () => {
+  it('should aggregate multiple numbers with new line or , separated', () => {
     const result = add('1\n2,3');
     expect(result).toEqual(6);
+  })
+
+  it('should aggregate multiple numbers with ; delimiters', () => {
+    const result = add('//;\n1;2');
+    expect(result).toEqual(3);
+  })
+
+  it('should aggregate multiple numbers with $ delimiters', () => {
+    const result = add('//$\n3$4');
+    expect(result).toEqual(7);
   })
 })

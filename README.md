@@ -1,8 +1,8 @@
 # Getting Started with String Calculator TDD Kata App
 
-This the String Calculator TDD Kata [String Calculator TDD Kata](https://github.com/sarveshmahajan89/String-Calculator-TDD-Kata.git).
+This is the  [String Calculator TDD Kata App](https://github.com/sarveshmahajan89/String-Calculator-TDD-Kata.git).
 
-## Application deployed at https://string-calculator-tdd-kata.vercel.app/
+## This Application is deployed at https://string-calculator-tdd-kata.vercel.app/
 
 ## Available Scripts
 

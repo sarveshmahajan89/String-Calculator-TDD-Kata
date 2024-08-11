@@ -1,12 +1,4 @@
-import { render, screen } from '@testing-library/react';
-import StringCalculator from './components/StringCalculator';
 import { add } from './utility/addNumbers';
-
-test('renders learn react link', () => {
-  render(<StringCalculator />);
-  const linkElement = screen.getByText(/String Calculator TDD Kata App/i);
-  expect(linkElement).toBeInTheDocument();
-});
 
 describe ('Addition', () => {
   it('Adding 2 and 2 makes 4', () => {

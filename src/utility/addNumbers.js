@@ -5,6 +5,7 @@ export function add(numbers) {
         const newDelimiter = numbers.charAt(2);
         numbers = numbers.replaceAll(newDelimiter, ',');
     }
+    numbers = numbers.replaceAll("\\n", "\r\n");
     sumOfNumbers = numbers.split(/,|\n/).reduce((sum, val) => {
         let num = Number(val);
         num = (isNaN(num) ? 0 : num);

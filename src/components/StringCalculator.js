@@ -1,7 +1,6 @@
-import './App.css';
 import { useState } from "react";
-import { add } from './addNumbers';
-import { useErrorBoundary } from './ErrorBoundaryContext';
+import { add } from '../utility/addNumbers';
+import { useErrorBoundary } from '../ErrorBoundaryContext';
 
 function StringCalculator() {
     const [textNumbers, setTextNumbers] = useState('');
@@ -26,15 +25,15 @@ function StringCalculator() {
   return (
       <div className="content-row">
           <div className="column">
-              <h3>Kindly input the numbers and proceed to click on the "Calculate" button to determine the sum</h3>
+              <h3>Please enter the numbers and click "Calculate" to find the sum</h3>
 
-              <p>You are free to input the required information as per the instructions:</p>
+              <p>Feel free to input the necessary information as per the instructions:</p>
 
               <ul>
-                  <li>Please input a positive number.</li>
+                  <li>Input a positive number.</li>
                   <li>Input positive numbers separated by commas (,).</li>
                   <li>Input positive numbers separated by new lines (\n).</li>
-                  <li>Enter positive numbers using different delimiters followed by //.</li>
+                  <li>Enter positive numbers followed by // and different delimiters.</li>
               </ul>
           </div>
           <div className="column">
@@ -42,13 +41,13 @@ function StringCalculator() {
                   <h4>Please enter the numbers into the input field</h4>
               </div>
               <div className="field-row">
-                  <input type='text' placeholder='Numbers' value={textNumbers} onChange={handleChange}/>
+                  <textarea placeholder='Numbers' value={textNumbers} onChange={handleChange}/>
               </div>
               <div className="field-row">
                   <input type='button' value='Calculate' onClick={calculateSum}/>
               </div>
               <div className="field-row">
-                  <label>Number's total value: {numbersTotal}</label>
+                  <label> Total value of the number: {numbersTotal}</label>
               </div>
           </div>
       </div>

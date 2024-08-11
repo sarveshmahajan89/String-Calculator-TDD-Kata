@@ -1,5 +1,5 @@
 import React from 'react';
-import { useErrorBoundary } from './ErrorBoundaryContext';
+import { useErrorBoundary } from '../ErrorBoundaryContext';
 
 const ErrorBoundary = ({ children }) => {
     const { hasError, error, setHasError, setError } = useErrorBoundary();

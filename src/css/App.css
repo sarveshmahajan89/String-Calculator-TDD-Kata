@@ -48,15 +48,17 @@ ul {
   text-align: left;
 }
 
-input[type=text] {
+textarea {
   padding:5px;
   margin:5px;
   border:2px solid #ccc;
   -webkit-border-radius: 5px;
   border-radius: 20px;
   width: 200px;
+  max-height: 90px;
+  max-width: 250px;
 }
-input[type=text]:focus {
+textarea:focus {
   border-color:#333;
 }
 

@@ -1,5 +1,6 @@
 import ErrorBoundary from './ErrorBoundary';
 import StringCalculator from './StringCalculator';
+import '../css/App.css';
 
 const App = () => {
     return (

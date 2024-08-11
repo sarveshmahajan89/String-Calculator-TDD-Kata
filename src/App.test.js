@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import StringCalculator from './StringCalculator';
-import { add } from './addNumbers';
+import StringCalculator from './components/StringCalculator';
+import { add } from './utility/addNumbers';
 
 test('renders learn react link', () => {
   render(<StringCalculator />);

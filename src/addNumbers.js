@@ -16,7 +16,7 @@ export function add(numbers) {
         return sum;
     }, 0);
     if (negativeNumbersList.length > 0 ) {
-        throw new Error('negative numbers not allowed ' + negativeNumbersList.join(''));
+        throw new Error('negative numbers not allowed ' + negativeNumbersList.join(','));
     }
     return sumOfNumbers;
 }

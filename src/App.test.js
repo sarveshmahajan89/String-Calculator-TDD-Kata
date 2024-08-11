@@ -59,4 +59,12 @@ describe ('Addition using addNumber method', () => {
     expect(t).toThrow(Error);
     expect(t).toThrow('negative numbers not allowed -1');
   })
+
+  it('should throw an exception for the list of negative numbers', () => {
+    const t = () => {
+      return add('-1,-2,-3');
+    };
+    expect(t).toThrow(Error);
+    expect(t).toThrow('negative numbers not allowed -1,-2,-3');
+  })
 })

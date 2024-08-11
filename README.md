@@ -2,7 +2,7 @@
 
 This the String Calculator TDD Kata [String Calculator TDD Kata](https://github.com/sarveshmahajan89/String-Calculator-TDD-Kata.git).
 
-## Application deployed at https://string-calculator-tdd-kata-lau6i5bij-sarveshmahajan89s-projects.vercel.app/
+## Application deployed at https://string-calculator-tdd-kata.vercel.app/
 
 ## Available Scripts
 

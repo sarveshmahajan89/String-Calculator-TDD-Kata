@@ -24,30 +24,33 @@ function StringCalculator() {
     };
 
   return (
-      <div>
-          <div className="content">
-              <h3>Please enter numbers in the input field and submit to calculate the sum:</h3>
-          </div>
-          <div className="content">
-              <p>Instructions on the input, you can enter:</p>
-          </div>
-          <div className="content">
+      <div className="content-row">
+          <div className="column">
+              <h3>Kindly input the numbers and proceed to click on the "Calculate" button to determine the sum</h3>
+
+              <p>You are free to input the required information as per the instructions:</p>
+
               <ul>
-                  <li>A positive number</li>
-                  <li>Positive numbers separated by comma(,)</li>
-                  <li>Positive numbers separated by new line(\n)</li>
-                  <li>Positive numbers with different delimiters followed by //</li>
+                  <li>Please input a positive number.</li>
+                  <li>Input positive numbers separated by commas (,).</li>
+                  <li>Input positive numbers separated by new lines (\n).</li>
+                  <li>Enter positive numbers using different delimiters followed by //.</li>
               </ul>
           </div>
-          <div className="content">
-              <input type='text' placeholder='Numbers' value={textNumbers} onChange={handleChange}/>
+          <div className="column">
+              <div className="field-row">
+                  <h4>Please enter the numbers into the input field</h4>
+              </div>
+              <div className="field-row">
+                  <input type='text' placeholder='Numbers' value={textNumbers} onChange={handleChange}/>
+              </div>
+              <div className="field-row">
+                  <input type='button' value='Calculate' onClick={calculateSum}/>
+              </div>
+              <div className="field-row">
+                  <label>Number's total value: {numbersTotal}</label>
+              </div>
           </div>
-          <div className="content">
-              <input type='button' value='Calculate' onClick={calculateSum}/>
-          </div>
-          {textNumbers && <div className="content">
-              <h3>Number's total value: {numbersTotal}</h3>
-          </div>}
       </div>
   );
 }

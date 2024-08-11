@@ -3,10 +3,10 @@ import StringCalculator from './StringCalculator';
 
 const App = () => {
     return (
-        <div className="App">
-            <header className="content">
+        <div className="app">
+            <div className="header">
                 <h1>String Calculator TDD Kata App</h1>
-            </header>
+            </div>
             <ErrorBoundary>
                 <StringCalculator/>
             </ErrorBoundary>

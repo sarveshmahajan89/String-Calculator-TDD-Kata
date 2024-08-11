@@ -51,4 +51,12 @@ describe ('Addition using addNumber method', () => {
     const result = add('//$\n3$4');
     expect(result).toEqual(7);
   })
+
+  it('should throw an exception for a negative number', () => {
+    const t = () => {
+      return add('-1');
+    };
+    expect(t).toThrow(Error);
+    expect(t).toThrow('negative numbers not allowed -1');
+  })
 })
